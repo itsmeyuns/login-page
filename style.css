@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: -3px 5px 36px -6px rgba(168,168,168,0.79);
+  -webkit-box-shadow: -3px 5px 36px -6px rgba(168,168,168,0.79);
+  -moz-box-shadow: -3px 5px 36px -6px rgba(168,168,168,0.79);
+  margin: auto;
+  border-radius: 40px;
+  padding: 30px 40px;
+}
+
+.left-side {
+  flex: 1;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* form { */
+  /* max-width: 400px; */
+  /* margin: auto; */
+/* } */
+
+.form-item {
+  margin: 20px 0;
+}
+
+.form-item label {
+  display: inline-block;
+  margin-bottom: 5px;
+  color: #777;
+}
+
+.form-item input:not(input[type=checkbox]) {
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: #eee;
+  height: 44px;
+  border-radius: 10px;
+  padding: 0 14px;
+}
+
+input[type=checkbox] {
+  margin-right: 10px;
+}
+
+input[type="checkbox"]:checked {
+  accent-color: #3750eb;
+}
+
+.form-item div {
+  position: relative;
+}
+
+i {
+  position: absolute;
+  right: 10px;
+  top: 14px;
+  cursor: pointer;
+  color: #7c7979;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 17px;
+  background-color: #3750eb;
+  color: #fff;
+}
+
+.right-side {
+  margin-top: auto;
+  width: 315px;
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 315px;
+} */
+
+
+@media (max-width: 768px) {
+  .right-side{
+    display: none;
+  }
+  .container {
+    width: 510px;
+    justify-content: center;
+  }
+}
+@media (min-width: 768px){
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px){
+  .container {
+    width: 970px;
+  }
+
+  .right-side {
+    width: 410px;
+  }
+
+}
+
