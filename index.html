@@ -28,7 +28,7 @@
           <label for="password">Password</label>
           <div>
             <input type="password" name="password" id="password">
-            <i class="fa-solid fa-eye"></i>
+            <i class="fa-solid fa-eye">Eye</i>
           </div>
         </div>
 
@@ -44,7 +44,6 @@
 
 
     <div class="right-side">
-      <!-- <img src="pics/undraw_login_re_4vu2.svg" width="100%" alt=""> -->
       <img src="pics/Car finance-amico.svg" width="100%">
     </div>
 
@@ -59,12 +58,11 @@
       if (i.classList.contains('fa-eye')) {
         i.classList.replace('fa-eye','fa-eye-slash')
         inp.type = 'text';
-        inp.focus()
       } else {
         i.classList.replace('fa-eye-slash','fa-eye')
         inp.type = 'password';
-        inp.focus()
       }
+      inp.focus()
       console.log(i.classList);
     })
   </script>
